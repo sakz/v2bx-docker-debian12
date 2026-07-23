@@ -58,7 +58,7 @@ ghcr.io/<GitHub-owner>/v2bx-debian12:<image-tag>
 echo '<PAT>' | docker login ghcr.io -u '<GitHub-user>' --password-stdin
 ```
 
-然后将 `.env` 的 `V2BX_IMAGE` 改成已发布镜像地址，执行：
+然后将 `.env` 的 `V2BX_IMAGE` 改成已发布镜像地址（例如 `ghcr.io/sakz/v2bx-debian12:v2bx-v0.4.0`），执行：
 
 ```bash
 docker compose pull
