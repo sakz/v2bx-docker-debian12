@@ -15,7 +15,7 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*; \
     mkdir -p /usr/local/V2bX /usr/local/share/V2bX; \
     curl --fail --location --retry 3 --silent --show-error \
-      "https://github.com/wyx2685/V2bX/releases/download/${V2BX_VERSION}/V2bX-linux-${v2bx_arch}.zip" \
+      "https://github.com/sakz/V2bX/releases/download/${V2BX_VERSION}/V2bX-linux-${v2bx_arch}.zip" \
       --output /tmp/v2bx.zip; \
     unzip -q /tmp/v2bx.zip -d /usr/local/V2bX; \
     rm /tmp/v2bx.zip; \
